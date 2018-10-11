@@ -1,4 +1,4 @@
-$RemoteComputers = Get-Content -Path C:\Users\kriskr_admin\Documents\PCList2.txt
+$RemoteComputers = Get-Content -Path C:\Users\kriskr_admin\Documents\PCList.txt
 $timer = (Get-Date -Format yyyy-MM-dd-HHmm)
 $filename = "C:\Users\kriskr_admin\Documents\" + $timer + "_error_log.txt"
 ForEach ($Computer in $RemoteComputers)
