@@ -16,4 +16,4 @@ ForEach ($Computer in $RemoteComputers)
 }
 
 
-Dette er en test2
+Dette er en test2fggfdgdfgdfg
