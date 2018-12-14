@@ -3,7 +3,11 @@ $saveto = "C:\members.txt"
 #Organizational Units containing users
 $ous = "**"
 
+add-pssnapin Microsoft.Exchange.Management.PowerShell.E2010
+
+
 Clear-Variable -Name COMPDG
+Clear-Variable -Name TargetDG
 $COMPDG = ForEach ($ou in $ous){
 Get-DistributionGroup -OrganizationalUnit $ou}
 
